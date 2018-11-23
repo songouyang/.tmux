@@ -1,3 +1,11 @@
+```bash
+mkdir -p ~/.dotfiles
+git clone git@github.com:songouyang/.tmux.git ~/.dotfiles/tmux
+cd ~/.dotfiles/tmux && git submodule update --init --recursive && cd
+ln -s ~/.dotfiles/tmux/.tmux.conf ~/.tmux.conf
+ln -s ~/.dotfiles/tmux/.tmux.conf.local ~/.tmux.conf.local
+```
+
 .tmux
 =====
 
